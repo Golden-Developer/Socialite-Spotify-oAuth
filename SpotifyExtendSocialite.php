@@ -1,0 +1,18 @@
+<?php
+
+namespace GoldenDeveloper\Spotify;
+
+use SocialiteProviders\Manager\SocialiteWasCalled;
+
+class SpotifyExtendSocialite
+{
+    /**
+     * Register the provider.
+     *
+     * @param \SocialiteProviders\Manager\SocialiteWasCalled $socialiteWasCalled
+     */
+    public function handle(SocialiteWasCalled $socialiteWasCalled)
+    {
+        $socialiteWasCalled->extendSocialite('spotify', Provider::class);
+    }
+}

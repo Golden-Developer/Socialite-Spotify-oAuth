@@ -1,0 +1,40 @@
+{
+    "name": "goldendeveloper/spotify",
+    "description": "Spotify OAuth2 Provider for Laravel Socialite",
+    "version": "1.0",
+    "keywords": [
+        "laravel",
+        "oauth",
+        "provider",
+        "socialite",
+        "spotify"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Collin ilgner",
+            "email": "cohohohn04@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "socialiteproviders/manager": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoldenDeveloper\\Spotify\\": ""
+        }
+    },
+    "support": {
+        "issues": "https://github.com/socialiteproviders/providers/issues",
+        "source": "https://github.com/socialiteproviders/providers"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GoldenDeveloper\\Spotify\\SpotifyServiceProvider"
+            ]
+        }
+    }
+}
